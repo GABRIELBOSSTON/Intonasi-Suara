@@ -1,0 +1,19 @@
+# Python 3.11; CPU wheels for torch/torchaudio are recommended (see README).
+numpy==1.26.4
+soundfile==0.13.1
+praat-parselmouth==0.4.7
+silero-vad==6.2.3
+torch==2.8.0
+torchaudio==2.8.0
+onnxruntime==1.22.1
+faster-whisper==1.2.1
+ctranslate2==4.6.0
+huggingface-hub==0.36.0
+# Pitch utama: CREPE tiny (MIT), bobot model ikut paket.
+torchcrepe==0.0.24
+librosa==0.11.0
+scipy==1.15.3
+resampy==0.4.3
+pytest==8.4.2
+# CTranslate2 4.6 imports pkg_resources; removed in newer setuptools.
+setuptools==80.9.0

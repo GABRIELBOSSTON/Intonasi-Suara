@@ -1,0 +1,1616 @@
+{
+  "created_local": "2026-10-26 13:45:01",
+  "python": "3.11.14 (main, Oct 28 2025, 12:02:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "threads": 4,
+  "repeats": 2,
+  "praat_version": "6.1.38",
+  "config": {
+    "ANALYSIS_VERSION": "0.3.1",
+    "MODE": "intonasi",
+    "SAMPLE_RATE": 16000,
+    "FFMPEG": "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\.runtime\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffmpeg.exe",
+    "FFPROBE": "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\.runtime\\ffmpeg\\ffmpeg-9.0.2-essentials_build\\bin\\ffprobe.exe",
+    "FFMPEG_TIMEOUT_SECONDS": 120.0,
+    "MAX_INPUT_MB": 512.0,
+    "MAX_DURATION_SECONDS": 600.0,
+    "MAX_DECODED_SAMPLES": 60000000,
+    "MIN_AUDIO_SECONDS": 1.0,
+    "MIN_SPEECH_SECONDS": 3.0,
+    "CLIP_AMPLITUDE": 0.999,
+    "CLIP_WARN_PCT": 0.1,
+    "CLIP_REVIEW_PCT": 1.0,
+    "CHANNEL_WEAK_RATIO": 0.05,
+    "CHANNEL_ANTIPHASE_CORRELATION": -0.8,
+    "SNR_WARN_DB": 20.0,
+    "SNR_LOW_DB": 10.0,
+    "QC_FRAME_SECONDS": 0.02,
+    "NOISE_MARGIN_SECONDS": 0.1,
+    "MIN_NOISE_SECONDS": 0.5,
+    "MIN_SNR_SPEECH_SECONDS": 0.5,
+    "POWER_EPSILON": 1e-12,
+    "VAD_THRESHOLD": 0.5,
+    "VAD_MIN_SPEECH_MS": 100,
+    "VAD_MIN_SILENCE_MS": 100,
+    "VAD_SPEECH_PAD_MS": 0,
+    "PAUSE_MIN_SECONDS": 0.25,
+    "LONG_PAUSE_SECONDS": 2.0,
+    "F0_FLOOR_HZ": 50.0,
+    "F0_CEILING_HZ": 600.0,
+    "F0_STEP_SECONDS": 0.01,
+    "F0_VOICING_THRESHOLD": 0.45,
+    "F0_SILENCE_THRESHOLD": 0.03,
+    "F0_ADAPT_MARGIN": 1.5,
+    "F0_ADAPT_LOW_PERCENTILE": 25.0,
+    "F0_ADAPT_HIGH_PERCENTILE": 75.0,
+    "F0_RANGE_LOW_PERCENTILE": 10.0,
+    "F0_RANGE_HIGH_PERCENTILE": 90.0,
+    "F0_MIN_ADAPT_FRAMES": 20,
+    "MIN_PHRASE_VOICED_SECONDS": 0.3,
+    "MIN_F0_COVERAGE": 0.3,
+    "OCTAVE_JUMP_ST": 9.0,
+    "MAX_OCTAVE_JUMPS_PER_MIN": 5.0,
+    "OCTAVE_REVIEW_MIN_COUNT": 3,
+    "MIN_PITCH_RANGE_ST": 4.0,
+    "MIN_PITCH_SD_ST": 2.0,
+    "PITCH_RANGE_BORDER_ST": 0.25,
+    "PITCH_SD_BORDER_ST": 0.15,
+    "ASR_MODEL_SIZE": "small",
+    "ASR_REPO": "Systran/faster-whisper-small",
+    "ASR_REVISION": "536b0662742c02347bc0e980a01041f333bce120",
+    "ASR_LOCAL_PATH": "",
+    "ASR_CACHE_DIR": "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\.cache\\models",
+    "ASR_LOCAL_FILES_ONLY": false,
+    "ASR_CPU_THREADS": 4,
+    "ASR_COMPUTE_TYPE": "int8",
+    "ASR_BEAM_SIZE": 5,
+    "ASR_CONDITION_ON_PREVIOUS_TEXT": false,
+    "ASR_ENABLED": true,
+    "EVIDENCE_LIMIT": 3,
+    "VIDEO_EXTENSIONS": [
+      ".mp4",
+      ".mov",
+      ".mkv",
+      ".webm",
+      ".avi",
+      ".m4v",
+      ".3gp"
+    ]
+  },
+  "config_fingerprint": "bbd7c1d10a155ff05aa08c07ce23a6fdbab598a4411b035435deaa79d673c8d7",
+  "packages": {
+    "audioread": "3.1.0",
+    "av": "18.1.0",
+    "certifi": "2026.10.23",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.2",
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "coloredlogs": "15.0.1",
+    "contourpy": "1.3.3",
+    "ctranslate2": "4.6.0",
+    "cycler": "0.12.1",
+    "decorator": "5.3.1",
+    "faster-whisper": "1.2.1",
+    "filelock": "3.32.3",
+    "flatbuffers": "25.12.19",
+    "fonttools": "4.67.0",
+    "fsspec": "2026.7.0",
+    "huggingface-hub": "0.36.0",
+    "humanfriendly": "10.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "Jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "lazy-loader": "0.6",
+    "librosa": "0.11.0",
+    "llvmlite": "0.50.0",
+    "MarkupSafe": "3.0.3",
+    "matplotlib": "3.10.8",
+    "mpmath": "1.3.0",
+    "msgpack": "1.2.3",
+    "narwhals": "2.27.1",
+    "networkx": "3.6.1",
+    "numba": "0.68.0",
+    "numpy": "1.26.4",
+    "onnxruntime": "1.22.1",
+    "packaging": "26.3",
+    "pillow": "13.0.0",
+    "platformdirs": "4.13.5",
+    "pluggy": "1.7.0",
+    "pooch": "1.9.0",
+    "praat-parselmouth": "0.4.7",
+    "protobuf": "7.36.2",
+    "pycparser": "3.12",
+    "Pygments": "2.21.0",
+    "pyparsing": "3.3.3",
+    "pyreadline3": "3.5.6",
+    "pytest": "8.4.2",
+    "python-dateutil": "3.0.0",
+    "PyYAML": "6.0.3",
+    "requests": "2.34.2",
+    "resampy": "0.4.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.15.3",
+    "setuptools": "80.9.0",
+    "silero-vad": "6.2.3",
+    "six": "1.17.0",
+    "soundfile": "0.13.1",
+    "soxr": "1.1.0",
+    "swift-f0": "0.3.0",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.7.0",
+    "tokenizers": "0.23.3",
+    "torch": "2.8.0+cpu",
+    "torchaudio": "2.8.0+cpu",
+    "torchcrepe": "0.0.24",
+    "tqdm": "4.70.1",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0"
+  },
+  "app_hashes_before": {
+    "voice-analysis\\app\\config.py": "392c3f670fb55fe463cee293b6bea19297dbafe3196146afacba6418a70b8647",
+    "voice-analysis\\app\\output.py": "7c31d8c6c45036062a3847bb5c5d92cdb84efa6ea8bd25b12a4497ebaa9d1272",
+    "voice-analysis\\app\\__init__.py": "063d8253414abf57df9aac910f0460b6f9e57dbfd9bb895b0ba7897b0ec9e0c5",
+    "voice-analysis\\app\\pipeline\\common.py": "fdeb8f95b6f07d2357225399a27f02b27ebd621a9749bfae19930a3484a15a3d",
+    "voice-analysis\\app\\pipeline\\extract.py": "88c5e684d44be7d784a94fdea31b61002979b46933b3c7bcde6249ea9cc339ed",
+    "voice-analysis\\app\\pipeline\\pitch.py": "5b3bb42b80932811c247043da980b0b947f284e108747a2647b50ae80bc00199",
+    "voice-analysis\\app\\pipeline\\quality.py": "021a32a291fcfdd767e56befc95798ced56c69d895317103f753289f6bbb76af",
+    "voice-analysis\\app\\pipeline\\run.py": "9d6a91798de80437b46837b111069d9029531ffff04bb452f0be784189537d93",
+    "voice-analysis\\app\\pipeline\\scoring.py": "34bcecb07ad092277cde5518988ec1a88937d0a7d425300d571d8d2a001e28a0",
+    "voice-analysis\\app\\pipeline\\syllable.py": "68ef5d5b30a47956b2cc482b5ba314d43da8d2fc3028cc943f542fa66da7126e",
+    "voice-analysis\\app\\pipeline\\tempo.py": "869480917415c5f31b70303ee4f8a143ae553602c421b00801a12f6c7dfd8d5c",
+    "voice-analysis\\app\\pipeline\\transcribe.py": "58b19c1ae35ba1f7af3247b402d622f3c67ca8abe48a57fa9b85b07fa0c87f56",
+    "voice-analysis\\app\\pipeline\\vad.py": "4563eeab0e2e891329a7b2e95e27fed48f178f0c3710e71f058ada88c7e546c2",
+    "voice-analysis\\app\\pipeline\\__init__.py": "09816379b1dfc73c145c8265121e0bc1ec6b93ab542b74f78c483460d942a6ab"
+  },
+  "models": [
+    {
+      "package": "torchcrepe",
+      "file": "full.pth",
+      "bytes": 88991291,
+      "sha256": "133225604dedd2e4005f8bbd1bd0a2ec073ba8b7a6cd31ff6d5edbbfa3539986"
+    },
+    {
+      "package": "torchcrepe",
+      "file": "tiny.pth",
+      "bytes": 1962363,
+      "sha256": "d4993eea36ed1a0ad9ac549c740dae5265b049ce72004f00c2f59e01c0be8432"
+    },
+    {
+      "package": "swift_f0",
+      "file": "model.onnx",
+      "bytes": 135090,
+      "sha256": "6385e8c2ebc3872e82c9ff5946228de44cd3be77a750ea53698b7dbfe94b0a22"
+    }
+  ],
+  "benchmark_hashes": {
+    "audit_environment.py": "5ca24437f1ddd80bd29b2523e4614aab677854089ba55c4d641256eb234f294e",
+    "generate.py": "6f407213b9038681585c8f4c3a373e517790c63086c45cdcacd8664a90d96c3c",
+    "metrics.py": "35b8d446f4b81c326d49728380f3e8dccd083401e7c299d1bd2d2702163b1d25",
+    "run_benchmark.py": "d47a0bcff5b4e14cd588b75809576cf6a09d433698d0d1e5c5a6b99cd896db85",
+    "test_benchmark.py": "ada1fb06996441a91372305aed657925c937f3e21583de08c1f27fe2cba9e4aa",
+    "trackers.py": "a39b307f8c301b5993d5a039b5613a033d08b067083393a1ad78d928fe00ff47"
+  },
+  "protocol_hash": "cb376eabddd1077fe8ce2e5176526c291bd9dae816caaa1083366d226063e7ad",
+  "numpy_torch_seed_per_neural_call": 20261026,
+  "protocol": {
+    "grid_seconds": 0.01,
+    "gpe_relative_threshold": 0.2,
+    "octave_tolerance_st": 1,
+    "boundary_guard_seconds": 0.06,
+    "creak_ambiguous_excluded": true,
+    "rtf_excludes_decode_vad_plot": true,
+    "real_vad_used_for_praat_and_statistics": true
+  },
+  "cases": [
+    {
+      "id": "synth_130_clean",
+      "kind": "synthetic",
+      "variant": "clean",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_clean.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_clean.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_creak",
+      "kind": "synthetic",
+      "variant": "creak",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_creak.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_creak.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_clipped",
+      "kind": "synthetic",
+      "variant": "clipped",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_clipped.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_clipped.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_noise20",
+      "kind": "synthetic",
+      "variant": "noise20",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_noise20.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_noise20.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_noise10",
+      "kind": "synthetic",
+      "variant": "noise10",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_noise10.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_noise10.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_music10",
+      "kind": "synthetic",
+      "variant": "music10",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_music10.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_music10.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_agc_proxy",
+      "kind": "synthetic",
+      "variant": "agc_proxy",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_agc_proxy.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_agc_proxy.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_combined",
+      "kind": "synthetic",
+      "variant": "combined",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_combined.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_combined.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_130_aac64",
+      "kind": "synthetic",
+      "variant": "aac64",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_aac64.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_130_aac64.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 130
+    },
+    {
+      "id": "synth_240_clean",
+      "kind": "synthetic",
+      "variant": "clean",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_clean.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_clean.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_creak",
+      "kind": "synthetic",
+      "variant": "creak",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_creak.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_creak.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_clipped",
+      "kind": "synthetic",
+      "variant": "clipped",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_clipped.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_clipped.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_noise20",
+      "kind": "synthetic",
+      "variant": "noise20",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_noise20.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_noise20.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_noise10",
+      "kind": "synthetic",
+      "variant": "noise10",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_noise10.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_noise10.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_music10",
+      "kind": "synthetic",
+      "variant": "music10",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_music10.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_music10.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_agc_proxy",
+      "kind": "synthetic",
+      "variant": "agc_proxy",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_agc_proxy.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_agc_proxy.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_combined",
+      "kind": "synthetic",
+      "variant": "combined",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_combined.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_combined.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "synth_240_aac64",
+      "kind": "synthetic",
+      "variant": "aac64",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_aac64.wav",
+      "reference": "D:\\gasgawe\\prototipe\\notasi\\research\\pitch-benchmark\\fixtures\\synth_240_aac64.npz",
+      "phrases": [
+        [
+          0.3,
+          2.1
+        ],
+        [
+          2.6,
+          4.3
+        ],
+        [
+          4.8,
+          6.2
+        ],
+        [
+          6.7,
+          7.7
+        ]
+      ],
+      "segments": [
+        [
+          0.0,
+          8.0
+        ]
+      ],
+      "base_hz": 240
+    },
+    {
+      "id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\1test.mp4",
+      "source_sha256": "db30fcc2b1219f4d0c2e738db9e2064642d99a7071a3282cb50613697445c230",
+      "audio_info": {
+        "original_channels": 2,
+        "original_sample_rate": 44100,
+        "original_channel_layout": "stereo",
+        "original_codec": "aac",
+        "duration_seconds": 9.961,
+        "analysis_sample_rate": 16000,
+        "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+        "clipping_pct": 0.15525405208523038,
+        "clipping_pct_per_channel": [
+          0.15525405208523038,
+          0.11860316882170825
+        ],
+        "rms_per_channel": [
+          0.36111740633039885,
+          0.3606166192937868
+        ],
+        "ac_rms_per_channel": [
+          0.36111684389408677,
+          0.36061599960460045
+        ],
+        "dc_offset_per_channel": [
+          -0.0006373466473165774,
+          -0.0006685357442384418
+        ],
+        "peak_per_channel": [
+          1.2934736013412476,
+          1.2211278676986694
+        ],
+        "stereo_correlation": 0.9828905613289406,
+        "selected_channel": null,
+        "channel_strategy": "mean",
+        "warnings": []
+      },
+      "segments": [
+        [
+          1.536,
+          1.696
+        ]
+      ],
+      "phrases": [
+        [
+          1.536,
+          1.696
+        ]
+      ],
+      "vad": {
+        "segments": [
+          [
+            1.536,
+            1.696
+          ]
+        ],
+        "phrases": [
+          [
+            1.536,
+            1.696
+          ]
+        ],
+        "pauses": [],
+        "valid_speech_seconds": 0.15999999999999992,
+        "speech_span_seconds": 0.15999999999999992,
+        "articulation_seconds": 0.15999999999999992,
+        "pause_ratio": 0.0,
+        "pause_median_seconds": null,
+        "pause_p90_seconds": null,
+        "long_pause_per_min": 0.0,
+        "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+        "model_id": "silero-vad/packaged-onnx"
+      }
+    },
+    {
+      "id": "real_02",
+      "kind": "real",
+      "variant": "original",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\21kandidat01.mp4",
+      "source_sha256": "371d6c57361c55eeda01dae240d58703daa26ebdcf4ed46b1911180185bd4910",
+      "audio_info": {
+        "original_channels": 2,
+        "original_sample_rate": 44100,
+        "original_channel_layout": "stereo",
+        "original_codec": "aac",
+        "duration_seconds": 26.19,
+        "analysis_sample_rate": 16000,
+        "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+        "clipping_pct": 0.0,
+        "clipping_pct_per_channel": [
+          0.0,
+          0.0
+        ],
+        "rms_per_channel": [
+          0.018979249134028306,
+          0.019127879457229848
+        ],
+        "ac_rms_per_channel": [
+          0.018979247292294204,
+          0.019127877266406683
+        ],
+        "dc_offset_per_channel": [
+          -8.36118452254623e-06,
+          -9.154864907320611e-06
+        ],
+        "peak_per_channel": [
+          0.19868458807468414,
+          0.20179122686386108
+        ],
+        "stereo_correlation": 0.984333658163538,
+        "selected_channel": null,
+        "channel_strategy": "mean",
+        "warnings": []
+      },
+      "segments": [
+        [
+          0.576,
+          10.304
+        ],
+        [
+          10.848,
+          17.088
+        ],
+        [
+          18.144,
+          25.696
+        ]
+      ],
+      "phrases": [
+        [
+          0.576,
+          10.304
+        ],
+        [
+          10.848,
+          17.088
+        ],
+        [
+          18.144,
+          25.696
+        ]
+      ],
+      "vad": {
+        "segments": [
+          [
+            0.576,
+            10.304
+          ],
+          [
+            10.848,
+            17.088
+          ],
+          [
+            18.144,
+            25.696
+          ]
+        ],
+        "phrases": [
+          [
+            0.576,
+            10.304
+          ],
+          [
+            10.848,
+            17.088
+          ],
+          [
+            18.144,
+            25.696
+          ]
+        ],
+        "pauses": [
+          [
+            10.304,
+            10.848
+          ],
+          [
+            17.088,
+            18.144
+          ]
+        ],
+        "valid_speech_seconds": 23.520000000000003,
+        "speech_span_seconds": 25.12,
+        "articulation_seconds": 23.520000000000003,
+        "pause_ratio": 0.06369426751592348,
+        "pause_median_seconds": 0.7999999999999989,
+        "pause_p90_seconds": 1.0047999999999977,
+        "long_pause_per_min": 0.0,
+        "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+        "model_id": "silero-vad/packaged-onnx"
+      }
+    },
+    {
+      "id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\kandidat01.mp4",
+      "source_sha256": "483a274dce9c877615d1a87454f6c644cdd9490ff1a340edbc27f2bf9cb24161",
+      "audio_info": {
+        "original_channels": 1,
+        "original_sample_rate": 48000,
+        "original_channel_layout": "mono",
+        "original_codec": "aac",
+        "duration_seconds": 108.0383125,
+        "analysis_sample_rate": 16000,
+        "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+        "clipping_pct": 0.00034709902349474724,
+        "clipping_pct_per_channel": [
+          0.00034709902349474724
+        ],
+        "rms_per_channel": [
+          0.1296914301959402
+        ],
+        "ac_rms_per_channel": [
+          0.12968943641610173
+        ],
+        "dc_offset_per_channel": [
+          0.0007191302679966313
+        ],
+        "peak_per_channel": [
+          1.016163945198059
+        ],
+        "stereo_correlation": null,
+        "selected_channel": null,
+        "channel_strategy": "mean",
+        "warnings": []
+      },
+      "segments": [
+        [
+          0.032,
+          1.184
+        ],
+        [
+          1.408,
+          3.296
+        ],
+        [
+          3.744,
+          11.008
+        ],
+        [
+          12.608,
+          15.584
+        ],
+        [
+          16.032,
+          21.28
+        ],
+        [
+          21.504,
+          24.864
+        ],
+        [
+          26.432,
+          32.896
+        ],
+        [
+          33.056,
+          34.208
+        ],
+        [
+          34.528,
+          35.232
+        ],
+        [
+          35.424,
+          36.864
+        ],
+        [
+          38.432,
+          40.256
+        ],
+        [
+          40.448,
+          43.488
+        ],
+        [
+          43.744,
+          45.44
+        ],
+        [
+          45.696,
+          51.136
+        ],
+        [
+          52.704,
+          54.816
+        ],
+        [
+          55.008,
+          60.96
+        ],
+        [
+          62.368,
+          66.464
+        ],
+        [
+          66.624,
+          67.36
+        ],
+        [
+          67.52,
+          69.056
+        ],
+        [
+          69.216,
+          72.64
+        ],
+        [
+          74.208,
+          80.928
+        ],
+        [
+          82.464,
+          86.528
+        ],
+        [
+          86.72,
+          88.576
+        ],
+        [
+          88.768,
+          91.84
+        ],
+        [
+          93.44,
+          98.24
+        ],
+        [
+          98.464,
+          99.808
+        ],
+        [
+          100.128,
+          103.36
+        ],
+        [
+          104.992,
+          106.08
+        ]
+      ],
+      "phrases": [
+        [
+          0.032,
+          3.296
+        ],
+        [
+          3.744,
+          11.008
+        ],
+        [
+          12.608,
+          15.584
+        ],
+        [
+          16.032,
+          24.864
+        ],
+        [
+          26.432,
+          34.208
+        ],
+        [
+          34.528,
+          36.864
+        ],
+        [
+          38.432,
+          43.488
+        ],
+        [
+          43.744,
+          45.44
+        ],
+        [
+          45.696,
+          51.136
+        ],
+        [
+          52.704,
+          60.96
+        ],
+        [
+          62.368,
+          72.64
+        ],
+        [
+          74.208,
+          80.928
+        ],
+        [
+          82.464,
+          91.84
+        ],
+        [
+          93.44,
+          99.808
+        ],
+        [
+          100.128,
+          103.36
+        ],
+        [
+          104.992,
+          106.08
+        ]
+      ],
+      "vad": {
+        "segments": [
+          [
+            0.032,
+            1.184
+          ],
+          [
+            1.408,
+            3.296
+          ],
+          [
+            3.744,
+            11.008
+          ],
+          [
+            12.608,
+            15.584
+          ],
+          [
+            16.032,
+            21.28
+          ],
+          [
+            21.504,
+            24.864
+          ],
+          [
+            26.432,
+            32.896
+          ],
+          [
+            33.056,
+            34.208
+          ],
+          [
+            34.528,
+            35.232
+          ],
+          [
+            35.424,
+            36.864
+          ],
+          [
+            38.432,
+            40.256
+          ],
+          [
+            40.448,
+            43.488
+          ],
+          [
+            43.744,
+            45.44
+          ],
+          [
+            45.696,
+            51.136
+          ],
+          [
+            52.704,
+            54.816
+          ],
+          [
+            55.008,
+            60.96
+          ],
+          [
+            62.368,
+            66.464
+          ],
+          [
+            66.624,
+            67.36
+          ],
+          [
+            67.52,
+            69.056
+          ],
+          [
+            69.216,
+            72.64
+          ],
+          [
+            74.208,
+            80.928
+          ],
+          [
+            82.464,
+            86.528
+          ],
+          [
+            86.72,
+            88.576
+          ],
+          [
+            88.768,
+            91.84
+          ],
+          [
+            93.44,
+            98.24
+          ],
+          [
+            98.464,
+            99.808
+          ],
+          [
+            100.128,
+            103.36
+          ],
+          [
+            104.992,
+            106.08
+          ]
+        ],
+        "phrases": [
+          [
+            0.032,
+            3.296
+          ],
+          [
+            3.744,
+            11.008
+          ],
+          [
+            12.608,
+            15.584
+          ],
+          [
+            16.032,
+            24.864
+          ],
+          [
+            26.432,
+            34.208
+          ],
+          [
+            34.528,
+            36.864
+          ],
+          [
+            38.432,
+            43.488
+          ],
+          [
+            43.744,
+            45.44
+          ],
+          [
+            45.696,
+            51.136
+          ],
+          [
+            52.704,
+            60.96
+          ],
+          [
+            62.368,
+            72.64
+          ],
+          [
+            74.208,
+            80.928
+          ],
+          [
+            82.464,
+            91.84
+          ],
+          [
+            93.44,
+            99.808
+          ],
+          [
+            100.128,
+            103.36
+          ],
+          [
+            104.992,
+            106.08
+          ]
+        ],
+        "pauses": [
+          [
+            3.296,
+            3.744
+          ],
+          [
+            11.008,
+            12.608
+          ],
+          [
+            15.584,
+            16.032
+          ],
+          [
+            24.864,
+            26.432
+          ],
+          [
+            34.208,
+            34.528
+          ],
+          [
+            36.864,
+            38.432
+          ],
+          [
+            43.488,
+            43.744
+          ],
+          [
+            45.44,
+            45.696
+          ],
+          [
+            51.136,
+            52.704
+          ],
+          [
+            60.96,
+            62.368
+          ],
+          [
+            72.64,
+            74.208
+          ],
+          [
+            80.928,
+            82.464
+          ],
+          [
+            91.84,
+            93.44
+          ],
+          [
+            99.808,
+            100.128
+          ],
+          [
+            103.36,
+            104.992
+          ]
+        ],
+        "valid_speech_seconds": 87.68,
+        "speech_span_seconds": 106.048,
+        "articulation_seconds": 89.952,
+        "pause_ratio": 0.1517803258901629,
+        "pause_median_seconds": 1.5360000000000014,
+        "pause_p90_seconds": 1.5999999999999985,
+        "long_pause_per_min": 0.0,
+        "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+        "model_id": "silero-vad/packaged-onnx"
+      }
+    },
+    {
+      "id": "real_04",
+      "kind": "real",
+      "variant": "original",
+      "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\ssstik.io_@gwanlab_1791771849354.mp4",
+      "source_sha256": "ae1cffabf2819dd1e42a2e8e6077c306e3ea90d575d103410e2a9a0dcf328e87",
+      "audio_info": {
+        "original_channels": 2,
+        "original_sample_rate": 44100,
+        "original_channel_layout": "stereo",
+        "original_codec": "aac",
+        "duration_seconds": 29.86,
+        "analysis_sample_rate": 16000,
+        "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+        "clipping_pct": 0.011239146250149983,
+        "clipping_pct_per_channel": [
+          0.00827747933288073,
+          0.011239146250149983
+        ],
+        "rms_per_channel": [
+          0.13838833531230058,
+          0.13888675965781458
+        ],
+        "ac_rms_per_channel": [
+          0.13838832156886402,
+          0.13888673386460088
+        ],
+        "dc_offset_per_channel": [
+          -6.167544799606144e-05,
+          -8.464436941808802e-05
+        ],
+        "peak_per_channel": [
+          1.31920325756073,
+          1.3184192180633545
+        ],
+        "stereo_correlation": 0.9820593232012589,
+        "selected_channel": null,
+        "channel_strategy": "mean",
+        "warnings": []
+      },
+      "segments": [
+        [
+          0.192,
+          0.8
+        ],
+        [
+          0.96,
+          7.072
+        ],
+        [
+          7.264,
+          9.088
+        ],
+        [
+          9.312,
+          10.272
+        ],
+        [
+          10.432,
+          15.04
+        ],
+        [
+          15.36,
+          18.304
+        ],
+        [
+          18.496,
+          29.86
+        ]
+      ],
+      "phrases": [
+        [
+          0.192,
+          15.04
+        ],
+        [
+          15.36,
+          29.86
+        ]
+      ],
+      "vad": {
+        "segments": [
+          [
+            0.192,
+            0.8
+          ],
+          [
+            0.96,
+            7.072
+          ],
+          [
+            7.264,
+            9.088
+          ],
+          [
+            9.312,
+            10.272
+          ],
+          [
+            10.432,
+            15.04
+          ],
+          [
+            15.36,
+            18.304
+          ],
+          [
+            18.496,
+            29.86
+          ]
+        ],
+        "phrases": [
+          [
+            0.192,
+            15.04
+          ],
+          [
+            15.36,
+            29.86
+          ]
+        ],
+        "pauses": [
+          [
+            15.04,
+            15.36
+          ]
+        ],
+        "valid_speech_seconds": 28.419999999999998,
+        "speech_span_seconds": 29.668,
+        "articulation_seconds": 29.348,
+        "pause_ratio": 0.010786032088445472,
+        "pause_median_seconds": 0.3200000000000003,
+        "pause_p90_seconds": 0.3200000000000003,
+        "long_pause_per_min": 0.0,
+        "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+        "model_id": "silero-vad/packaged-onnx"
+      }
+    }
+  ],
+  "warmup_seconds": {
+    "praat_current": 0.0036902999272570014,
+    "praat_hirst": 0.0024172000121325254,
+    "praat_hirst_cost04": 0.00238540000282228,
+    "praat_post": 0.004416799987666309,
+    "pyin": 3.598643900011666,
+    "torchcrepe_tiny": 0.4455096999881789,
+    "swift_f0": 0.35381630004849285
+  },
+  "app_hashes_after": {
+    "voice-analysis\\app\\config.py": "392c3f670fb55fe463cee293b6bea19297dbafe3196146afacba6418a70b8647",
+    "voice-analysis\\app\\output.py": "7c31d8c6c45036062a3847bb5c5d92cdb84efa6ea8bd25b12a4497ebaa9d1272",
+    "voice-analysis\\app\\__init__.py": "063d8253414abf57df9aac910f0460b6f9e57dbfd9bb895b0ba7897b0ec9e0c5",
+    "voice-analysis\\app\\pipeline\\common.py": "fdeb8f95b6f07d2357225399a27f02b27ebd621a9749bfae19930a3484a15a3d",
+    "voice-analysis\\app\\pipeline\\extract.py": "88c5e684d44be7d784a94fdea31b61002979b46933b3c7bcde6249ea9cc339ed",
+    "voice-analysis\\app\\pipeline\\pitch.py": "5b3bb42b80932811c247043da980b0b947f284e108747a2647b50ae80bc00199",
+    "voice-analysis\\app\\pipeline\\quality.py": "021a32a291fcfdd767e56befc95798ced56c69d895317103f753289f6bbb76af",
+    "voice-analysis\\app\\pipeline\\run.py": "9d6a91798de80437b46837b111069d9029531ffff04bb452f0be784189537d93",
+    "voice-analysis\\app\\pipeline\\scoring.py": "34bcecb07ad092277cde5518988ec1a88937d0a7d425300d571d8d2a001e28a0",
+    "voice-analysis\\app\\pipeline\\syllable.py": "68ef5d5b30a47956b2cc482b5ba314d43da8d2fc3028cc943f542fa66da7126e",
+    "voice-analysis\\app\\pipeline\\tempo.py": "869480917415c5f31b70303ee4f8a143ae553602c421b00801a12f6c7dfd8d5c",
+    "voice-analysis\\app\\pipeline\\transcribe.py": "58b19c1ae35ba1f7af3247b402d622f3c67ca8abe48a57fa9b85b07fa0c87f56",
+    "voice-analysis\\app\\pipeline\\vad.py": "4563eeab0e2e891329a7b2e95e27fed48f178f0c3710e71f058ada88c7e546c2",
+    "voice-analysis\\app\\pipeline\\__init__.py": "09816379b1dfc73c145c8265121e0bc1ec6b93ab542b74f78c483460d942a6ab"
+  },
+  "app_sources_unchanged": true,
+  "finished_local": "2026-10-26 13:50:18"
+}

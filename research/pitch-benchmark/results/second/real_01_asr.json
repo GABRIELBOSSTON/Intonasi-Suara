@@ -1,0 +1,53 @@
+{
+  "file_id": "real_01",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 8.36,
+      "text": " Terima kasih kerana menonton!",
+      "no_speech_prob": 0.4057565927505493,
+      "avg_logprob": -0.8376340974460948,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 2.3,
+          "word": " Terima",
+          "probability": 0.45095613948069513
+        },
+        {
+          "start": 2.3,
+          "end": 8.28,
+          "word": " kasih",
+          "probability": 0.8705699443817139
+        },
+        {
+          "start": 8.28,
+          "end": 8.28,
+          "word": " kerana",
+          "probability": 0.5692512094974518
+        },
+        {
+          "start": 8.28,
+          "end": 8.36,
+          "word": " menonton!",
+          "probability": 0.8944054841995239
+        }
+      ]
+    }
+  ],
+  "model": {
+    "repo": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "source": "huggingface_snapshot",
+    "file_sha256": {
+      "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+      "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+      "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+      "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    },
+    "device": "cpu",
+    "compute_type": "int8"
+  },
+  "runtime_seconds": 2.377448600018397,
+  "note": "Full audio; no VAD cropping. ASR boundaries are approximate, not phonetic ground truth."
+}

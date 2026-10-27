@@ -1,0 +1,65 @@
+INFO stage=extract start
+INFO stage=extract elapsed_seconds=0.474
+INFO stage=vad start
+INFO stage=vad elapsed_seconds=2.306
+INFO stage=quality start
+INFO stage=quality elapsed_seconds=0.001
+INFO stage=pitch start
+INFO stage=pitch elapsed_seconds=4.842
+INFO stage=transcribe start
+D:\gasgawe\prototipe\notasi\voice-analysis\.venv\Lib\site-packages\ctranslate2\__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|##########| 4/4 [00:00<?, ?it/s]
+INFO Processing audio with duration 00:00.160
+INFO stage=transcribe elapsed_seconds=7.952
+INFO stage=syllable start
+INFO stage=syllable elapsed_seconds=0.004
+INFO stage=tempo start
+ERROR stage=tempo code=tempo_insufficient_data type=AnalysisError
+INFO stage=tempo elapsed_seconds=0.002
+INFO stage=extract start
+INFO stage=extract elapsed_seconds=0.486
+INFO stage=vad start
+INFO stage=vad elapsed_seconds=0.181
+INFO stage=quality start
+INFO stage=quality elapsed_seconds=0.002
+INFO stage=pitch start
+INFO stage=pitch elapsed_seconds=2.589
+INFO stage=transcribe start
+INFO Processing audio with duration 00:25.120
+INFO stage=transcribe elapsed_seconds=5.524
+INFO stage=syllable start
+INFO stage=syllable elapsed_seconds=0.001
+INFO stage=tempo start
+INFO stage=tempo elapsed_seconds=0.000
+INFO stage=extract start
+INFO stage=extract elapsed_seconds=0.479
+INFO stage=vad start
+INFO stage=vad elapsed_seconds=0.643
+INFO stage=quality start
+INFO stage=quality elapsed_seconds=0.008
+INFO stage=pitch start
+INFO stage=pitch elapsed_seconds=9.579
+INFO stage=transcribe start
+INFO Processing audio with duration 01:46.048
+INFO stage=transcribe elapsed_seconds=17.216
+INFO stage=syllable start
+INFO stage=syllable elapsed_seconds=0.001
+INFO stage=tempo start
+INFO stage=tempo elapsed_seconds=0.000
+INFO stage=extract start
+INFO stage=extract elapsed_seconds=0.445
+INFO stage=vad start
+INFO stage=vad elapsed_seconds=0.194
+INFO stage=quality start
+INFO stage=quality elapsed_seconds=0.003
+INFO stage=pitch start
+INFO stage=pitch elapsed_seconds=2.696
+INFO stage=transcribe start
+INFO Processing audio with duration 00:29.668
+INFO stage=transcribe elapsed_seconds=5.993
+INFO stage=syllable start
+INFO stage=syllable elapsed_seconds=0.001
+INFO stage=tempo start
+INFO stage=tempo elapsed_seconds=0.000
+{"files": 4, "files_with_errors": 1, "output_csv": "..\\research\\hasil-crepe\\batch-v05.csv"}

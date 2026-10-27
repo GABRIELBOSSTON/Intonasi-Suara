@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tes Intonasi GasGawe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Layout: video + transkrip di kiri, keputusan + layar nada + angka live di kanan.
+     Palet alat ukur audio; "layar" grafik tetap gelap di kedua tema. */
+  :root {
+    --bg: #eef1ef; --surface: #ffffff; --surface-2: #e2e8e4; --fg: #10201a; --muted: #55655e;
+    --border: #c7d1cb; --accent: #0d7d72; --accent-fg: #ffffff;
+    --good: #0f8a3f; --warn: #b2660a; --bad: #b42318; --info: #3b5bdb;
+    --scope-bg: #061411; --scope-text: #9fe8db;
+    --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1210; --surface: #121c19; --surface-2: #17221e; --fg: #e9f1ec; --muted: #91a69c;
+      --border: #28362f; --accent: #2dd4bf; --accent-fg: #06201b;
+      --good: #4ade80; --warn: #fbbf24; --bad: #f87171; --info: #93a8ff;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 var(--font-ui);
+         padding: 20px max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+  .wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+  h1 { margin: 0; font-size: clamp(20px, 2.6vw, 28px); letter-spacing: -0.01em; text-wrap: balance; }
+  header p { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font: 600 12px var(--font-mono);
+          padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-2); color: var(--muted); }
+  .chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .chip.good { color: var(--good); } .chip.warn { color: var(--warn); } .chip.bad { color: var(--bad); } .chip.info { color: var(--info); }
+  .privacy { margin-top: 8px; color: var(--accent); }
+
+  .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 960px) { .grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); align-items: start; } }
+  .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; min-width: 0; }
+  .panel-title { font: 500 11px var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+
+  .video-shell { background: var(--scope-bg); border-radius: 10px; overflow: hidden; aspect-ratio: 16/10;
+                 display: flex; align-items: center; justify-content: center; }
+  .video-shell video { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .empty { color: var(--scope-text); font: 13px var(--font-mono); text-align: center; padding: 16px; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; }
+  .btn { font: 600 13px var(--font-ui); border-radius: 8px; padding: 9px 14px; border: 1px solid var(--border);
+         background: var(--surface-2); color: var(--fg); cursor: pointer; }
+  .btn.primary { background: var(--accent); color: var(--accent-fg); border-color: transparent; }
+  .btn:focus-visible, label.btn:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input[type=file] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+  .progress { font: 12px var(--font-mono); color: var(--muted); }
+
+  .words { margin-top: 14px; max-height: 190px; overflow-y: auto; line-height: 1.9; font-size: 14px;
+           border-top: 1px dashed var(--border); padding-top: 10px; }
+  .words span { padding: 1px 2px; border-radius: 4px; color: var(--muted); cursor: pointer; }
+  .words span.said { color: var(--fg); }
+  .words span.now { background: var(--accent); color: var(--accent-fg); }
+
+  .decision { display: grid; gap: 10px; margin-bottom: 14px; }
+  .verdict { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .verdict .big { font-size: 18px; font-weight: 700; }
+  .reasons { margin: 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+  .reasons li { margin: 2px 0; }
+
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 12px; }
+  @media (min-width: 560px) { .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .tile { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 9px 11px; min-width: 0; }
+  .tile .label { font: 10.5px var(--font-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+  .tile .value { font: 600 19px var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tile .value small { font-size: 11px; font-weight: 500; color: var(--muted); }
+  .tile .sub { font: 11px var(--font-mono); color: var(--muted); }
+
+  .scope { background: var(--scope-bg); border-radius: 10px; padding: 8px 8px 4px; }
+  canvas { display: block; width: 100%; }
+  #scope { height: 240px; }
+  #overview { height: 54px; margin-top: 6px; cursor: pointer; }
+  .legend { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font: 11px var(--font-mono); color: var(--scope-text); padding: 6px 2px 2px; }
+  .note { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); font-size: 12.5px; color: var(--muted); max-width: 75ch; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Tes Intonasi GasGawe</h1>
+    <p>Pilih video profil. Sistem menjalankan analisis yang sama dengan prototipe (CREPE untuk nada, Whisper untuk tempo), lalu hasilnya diputar bersama video.</p>
+    <div class="chip privacy">Diproses di laptop ini (127.0.0.1). File sementara dihapus setelah analisis.</div>
+  </header>
+
+  <div class="grid">
+    <section class="panel">
+      <div class="panel-title">Video</div>
+      <div class="video-shell">
+        <div class="empty" id="empty">Belum ada video.<br>Pilih file untuk mulai.</div>
+        <video id="video" controls playsinline hidden></video>
+      </div>
+      <div class="row">
+        <label class="btn primary" for="file">Pilih video</label>
+        <input type="file" id="file" accept="video/*,audio/*">
+        <span class="progress" id="progress"></span>
+      </div>
+      <div class="words" id="words" hidden></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title">Hasil item "Intonasi suara yang naik turun"</div>
+      <div class="decision" id="decision">
+        <div class="verdict"><span class="chip" id="verdict">Menunggu video</span></div>
+      </div>
+
+      <div class="panel-title">Live mengikuti video</div>
+      <div class="stats">
+        <div class="tile"><div class="label">Nada sekarang</div><div class="value" id="sNow">—</div><div class="sub" id="sNowSt">&nbsp;</div></div>
+        <div class="tile"><div class="label">Rentang s.d. kini</div><div class="value" id="sRange">—</div><div class="sub" id="sRangeZ">&nbsp;</div></div>
+        <div class="tile"><div class="label">Tempo s.d. kini</div><div class="value" id="sTempo">—</div><div class="sub" id="sTempoZ">&nbsp;</div></div>
+        <div class="tile"><div class="label">Waktu bicara</div><div class="value" id="sSpeech">—</div><div class="sub" id="sSpeechSub">&nbsp;</div></div>
+      </div>
+      <div class="scope">
+        <canvas id="scope"></canvas>
+        <canvas id="overview" title="Klik untuk lompat ke bagian video"></canvas>
+        <div class="legend">
+          <span>titik = nada (semitone relatif terhadap nada tengah orang ini)</span>
+          <span>garis putus = P10 &amp; P90 seluruh video · area gelap = jeda</span>
+        </div>
+      </div>
+      <div class="note" id="method">
+        Angka "s.d. kini" dihitung dari awal video sampai detik yang sedang diputar, jadi berubah selama video berjalan.
+        Keputusan di atas memakai seluruh video. Ambang adalah hipotesis pilot.
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const video = $("video"), file = $("file"), progress = $("progress");
+  const scope = $("scope"), sctx = scope.getContext("2d");
+  const overview = $("overview"), octx = overview.getContext("2d");
+  const WINDOW = 12;
+  let cfg = null, data = null, contour = [], words = [], segments = [], median = 1, p10 = 0, p90 = 0;
+  let url = null, timer = null;
+
+  const REASONS = {
+    pitch_near_pilot_threshold: "Nada dekat ambang, cek manual.",
+    tempo_near_pilot_threshold: "Tempo dekat ambang, cek manual.",
+    pitch_above_plausible_zone: "Nada di atas zona wajar, kemungkinan salah ukur. Cek manual.",
+    pitch_octave_jumps_high: "Banyak lompatan nada mendadak, pengukuran kurang andal.",
+    f0_coverage_insufficient: "Terlalu sedikit bagian bersuara yang terbaca nadanya.",
+    pitch_features_unavailable: "Nada tidak bisa dihitung.",
+    tempo_unavailable: "Tempo tidak bisa dihitung (transkrip/suku kata gagal).",
+    insufficient_speech_duration: "Bagian bicara terlalu pendek (< 3 detik).",
+    insufficient_audio_quality: "Kualitas rekaman tidak layak dinilai.",
+    syllable_unsupported_text: "Transkrip berisi kata yang suku katanya tidak bisa diperkirakan.",
+    clipping_high: "Suara pecah (clipping) terlalu banyak.",
+    tempo_insufficient_data: "Data tempo tidak cukup.",
+  };
+  const ZONE_CLASS = { wajar: "good", datar: "warn", lambat: "warn", ekstrem: "bad", cepat: "info" };
+
+  function sizeCanvas(c, h) {
+    const dpr = Math.min(devicePixelRatio || 1, 2), w = c.clientWidth;
+    c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+    c.getContext("2d").setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function resize() { sizeCanvas(scope, 240); sizeCanvas(overview, 54); drawOverview(); }
+  addEventListener("resize", resize);
+
+  const st = (hz) => 12 * Math.log2(hz / median);
+  const pct = (sorted, q) => sorted.length ? sorted[Math.min(sorted.length - 1, Math.floor(sorted.length * q))] : 0;
+  const fmt = (v, d = 1) => (v == null || !isFinite(v)) ? "—" : v.toFixed(d).replace(".", ",");
+
+  function chip(text, cls) { return `<span class="chip ${cls || ""}">${text}</span>`; }
+
+  function renderDecision(r) {
+    const status = r.status, passed = r.intonation_item_passed;
+    let label, cls;
+    if (status === "dapat_dinilai") { label = passed ? "Terpenuhi" : "Tidak terpenuhi"; cls = passed ? "good" : "bad"; }
+    else if (status === "perlu_peninjauan") { label = "Perlu peninjauan manual"; cls = "warn"; }
+    else { label = "Bukti belum cukup"; cls = ""; }
+    const reasons = (r.abstain_reason || "").split(";").filter(Boolean)
+      .map((code) => `<li>${REASONS[code] || code}</li>`).join("");
+    const pz = r.pitch_zone, tz = r.tempo_zone;
+    $("decision").innerHTML = `
+      <div class="verdict"><span class="chip ${cls} big">${label}</span>
+        ${pz ? chip("nada " + pz, ZONE_CLASS[pz]) : ""}
+        ${tz ? chip("tempo " + tz, ZONE_CLASS[tz]) : ""}
+        ${chip("mode " + r.mode)}</div>
+      <div class="stats" style="margin:0">
+        <div class="tile"><div class="label">Rentang nada</div><div class="value">${fmt(r.pitch_range_p10_p90_st)} <small>st</small></div><div class="sub">wajar ${cfg.MIN_PITCH_RANGE_ST}–${cfg.MAX_PITCH_RANGE_ST}</div></div>
+        <div class="tile"><div class="label">Variasi/kalimat</div><div class="value">${fmt(r.pitch_sd_st_phrase_median)} <small>st</small></div><div class="sub">wajar ${cfg.MIN_PITCH_SD_ST}–${cfg.MAX_PITCH_SD_ST}</div></div>
+        <div class="tile"><div class="label">Tempo</div><div class="value">${fmt(r.articulation_rate_syl_per_s)} <small>sk/dtk</small></div><div class="sub">lambat &lt; ${cfg.MIN_ARTICULATION_SYL_S}</div></div>
+        <div class="tile"><div class="label">Nada tengah</div><div class="value">${fmt(r.f0_median_hz, 0)} <small>Hz</small></div><div class="sub">${r.octave_jump_count ?? "—"} lompatan oktaf</div></div>
+      </div>
+      ${reasons ? `<ul class="reasons">${reasons}</ul>` : ""}`;
+  }
+
+  function prepare(r) {
+    data = r;
+    const c = (r.pitch && r.pitch.contour) || { t: [], hz: [] };
+    contour = c.t.map((t, i) => ({ t, hz: c.hz[i] }));
+    const sorted = contour.map((p) => p.hz).sort((a, b) => a - b);
+    median = sorted.length ? sorted[Math.floor(sorted.length / 2)] : 1;
+    const sts = contour.map((p) => st(p.hz)).sort((a, b) => a - b);
+    p10 = pct(sts, 0.10); p90 = pct(sts, 0.90);
+    segments = (r.vad && r.vad.segments) || [];
+    words = r.demo_words || [];
+    $("words").innerHTML = words.map((w, i) => `<span data-i="${i}">${w.word}</span>`).join(" ");
+    $("words").hidden = !words.length;
+    renderDecision(r);
+    drawOverview();
+  }
+
+  // Statistik dari awal video sampai detik t (yang "s.d. kini").
+  function liveStats(t) {
+    const upto = contour.filter((p) => p.t <= t);
+    const now = [...upto].reverse().find((p) => t - p.t < 0.15);
+    $("sNow").innerHTML = now ? `${Math.round(now.hz)} <small>Hz</small>` : "— <small>Hz</small>";
+    $("sNowSt").textContent = now ? `${st(now.hz) >= 0 ? "+" : ""}${fmt(st(now.hz))} st dari tengah` : "jeda / tak bersuara";
+
+    if (upto.length >= 20) {
+      const s = upto.map((p) => st(p.hz)).sort((a, b) => a - b);
+      const range = pct(s, 0.9) - pct(s, 0.1);
+      $("sRange").innerHTML = `${fmt(range)} <small>st</small>`;
+      $("sRangeZ").textContent = range < cfg.MIN_PITCH_RANGE_ST ? "masih datar" : range > cfg.MAX_PITCH_RANGE_ST ? "di atas zona wajar" : "zona wajar";
+    } else { $("sRange").innerHTML = "— <small>st</small>"; $("sRangeZ").textContent = "mengumpulkan…"; }
+
+    let speech = 0;
+    for (const [a, b] of segments) speech += Math.max(0, Math.min(b, t) - a);
+    const syl = words.filter((w) => w.end != null && w.end <= t && w.syllables).reduce((n, w) => n + w.syllables, 0);
+    $("sSpeech").innerHTML = `${fmt(speech)} <small>dtk</small>`;
+    $("sSpeechSub").textContent = `dari ${fmt(t)} dtk diputar`;
+    if (speech >= 3 && syl) {
+      const rate = syl / speech;
+      $("sTempo").innerHTML = `${fmt(rate)} <small>sk/dtk</small>`;
+      $("sTempoZ").textContent = rate < cfg.MIN_ARTICULATION_SYL_S ? "lambat" : rate > cfg.FAST_ARTICULATION_SYL_S ? "cepat" : "wajar";
+    } else { $("sTempo").innerHTML = "— <small>sk/dtk</small>"; $("sTempoZ").textContent = "mengumpulkan…"; }
+
+    const spans = $("words").children;
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      spans[i].className = (w.start <= t && t < w.end) ? "now" : (w.end <= t ? "said" : "");
+    }
+    const active = $("words").querySelector(".now");
+    if (active && !video.paused) active.scrollIntoView({ block: "nearest" });
+  }
+
+  const Y_ST = 12; // sumbu y: -12..+12 semitone dari nada tengah
+  function yOf(v, h) { return h / 2 - (Math.max(-Y_ST, Math.min(Y_ST, v)) / Y_ST) * (h / 2 - 8); }
+
+  function drawScope(t) {
+    const w = scope.clientWidth, h = 240, left = t - WINDOW;
+    sctx.clearRect(0, 0, w, h);
+    const x = (tt) => ((tt - left) / WINDOW) * w;
+    // Jeda (di luar segmen bicara) digelapkan.
+    sctx.fillStyle = "rgba(0,0,0,0.35)";
+    let cursor = left;
+    for (const [a, b] of segments) {
+      if (b < left || a > t) continue;
+      if (a > cursor) sctx.fillRect(x(cursor), 0, x(a) - x(cursor), h);
+      cursor = Math.max(cursor, b);
+    }
+    if (cursor < t) sctx.fillRect(x(cursor), 0, x(t) - x(cursor), h);
+    // Kisi tiap 3 semitone.
+    sctx.font = "10px 'IBM Plex Mono', monospace";
+    for (let v = -12; v <= 12; v += 3) {
+      const y = yOf(v, h);
+      sctx.strokeStyle = v === 0 ? "rgba(94,234,212,0.45)" : "rgba(94,234,212,0.13)";
+      sctx.beginPath(); sctx.moveTo(0, y); sctx.lineTo(w, y); sctx.stroke();
+      sctx.fillStyle = "rgba(159,232,219,0.75)";
+      sctx.fillText((v > 0 ? "+" : "") + v + " st", 4, y - 3);
+    }
+    // Garis P10 dan P90 seluruh video: jaraknya = rentang nada.
+    sctx.setLineDash([5, 5]); sctx.strokeStyle = "rgba(251,191,36,0.8)";
+    for (const v of [p10, p90]) { const y = yOf(v, h); sctx.beginPath(); sctx.moveTo(0, y); sctx.lineTo(w, y); sctx.stroke(); }
+    sctx.setLineDash([]);
+    // Titik nada.
+    sctx.fillStyle = "#5eead4";
+    for (const p of contour) {
+      if (p.t < left || p.t > t) continue;
+      sctx.beginPath(); sctx.arc(x(p.t), yOf(st(p.hz), h), 2, 0, Math.PI * 2); sctx.fill();
+    }
+    sctx.strokeStyle = "rgba(94,234,212,0.6)";
+    sctx.beginPath(); sctx.moveTo(w - 1, 0); sctx.lineTo(w - 1, h); sctx.stroke();
+  }
+
+  function drawOverview() {
+    const w = overview.clientWidth, h = 54, dur = video.duration || (contour.length ? contour[contour.length - 1].t : 0);
+    octx.clearRect(0, 0, w, h);
+    if (!dur) return;
+    octx.fillStyle = "rgba(94,234,212,0.55)";
+    for (const p of contour) octx.fillRect((p.t / dur) * w, h / 2 - (Math.max(-12, Math.min(12, st(p.hz))) / 12) * (h / 2 - 4), 1.5, 1.5);
+    const px = ((video.currentTime || 0) / dur) * w;
+    octx.fillStyle = "#fbbf24"; octx.fillRect(px - 1, 0, 2, h);
+  }
+
+  function frame() {
+    const t = video.currentTime || 0;
+    if (data) { drawScope(t); liveStats(t); drawOverview(); }
+    requestAnimationFrame(frame);
+  }
+
+  overview.addEventListener("click", (e) => {
+    if (!video.duration) return;
+    const rect = overview.getBoundingClientRect();
+    video.currentTime = ((e.clientX - rect.left) / rect.width) * video.duration;
+  });
+  $("words").addEventListener("click", (e) => {
+    const i = e.target.dataset && e.target.dataset.i;
+    if (i != null && words[i]) video.currentTime = words[i].start;
+  });
+
+  file.addEventListener("change", async () => {
+    const f = file.files && file.files[0];
+    if (!f) return;
+    if (url) URL.revokeObjectURL(url);
+    url = URL.createObjectURL(f);
+    video.src = url; video.hidden = false; $("empty").hidden = true;
+    data = null; contour = []; words = []; $("words").hidden = true;
+    $("decision").innerHTML = `<div class="verdict">${chip("Menganalisis…", "info")}</div>`;
+    const started = performance.now();
+    clearInterval(timer);
+    timer = setInterval(() => { progress.textContent = `Menganalisis ${Math.round((performance.now() - started) / 1000)} dtk… (video boleh diputar)`; }, 500);
+    try {
+      const res = await fetch("/analyze", { method: "POST", body: f, headers: { "X-Filename": f.name } });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.message || "Analisis gagal.");
+      prepare(body);
+      progress.textContent = `Selesai dalam ${Math.round((performance.now() - started) / 1000)} dtk. Putar video untuk melihat hasilnya berjalan.`;
+    } catch (err) {
+      $("decision").innerHTML = `<div class="verdict">${chip("Gagal", "bad")}</div><ul class="reasons"><li>${err.message}. Pastikan server tes masih berjalan.</li></ul>`;
+      progress.textContent = "";
+    } finally { clearInterval(timer); }
+  });
+
+  fetch("/config").then((r) => r.json()).then((c) => { cfg = c; });
+  resize();
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

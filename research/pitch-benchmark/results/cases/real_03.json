@@ -1,0 +1,645 @@
+{
+  "case": {
+    "id": "real_03",
+    "kind": "real",
+    "variant": "original",
+    "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\kandidat01.mp4",
+    "source_sha256": "483a274dce9c877615d1a87454f6c644cdd9490ff1a340edbc27f2bf9cb24161",
+    "audio_info": {
+      "original_channels": 1,
+      "original_sample_rate": 48000,
+      "original_channel_layout": "mono",
+      "original_codec": "aac",
+      "duration_seconds": 108.0383125,
+      "analysis_sample_rate": 16000,
+      "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "clipping_pct": 0.00034709902349474724,
+      "clipping_pct_per_channel": [
+        0.00034709902349474724
+      ],
+      "rms_per_channel": [
+        0.1296914301959402
+      ],
+      "ac_rms_per_channel": [
+        0.12968943641610173
+      ],
+      "dc_offset_per_channel": [
+        0.0007191302679966313
+      ],
+      "peak_per_channel": [
+        1.016163945198059
+      ],
+      "stereo_correlation": null,
+      "selected_channel": null,
+      "channel_strategy": "mean",
+      "warnings": []
+    },
+    "segments": [
+      [
+        0.032,
+        1.184
+      ],
+      [
+        1.408,
+        3.296
+      ],
+      [
+        3.744,
+        11.008
+      ],
+      [
+        12.608,
+        15.584
+      ],
+      [
+        16.032,
+        21.28
+      ],
+      [
+        21.504,
+        24.864
+      ],
+      [
+        26.432,
+        32.896
+      ],
+      [
+        33.056,
+        34.208
+      ],
+      [
+        34.528,
+        35.232
+      ],
+      [
+        35.424,
+        36.864
+      ],
+      [
+        38.432,
+        40.256
+      ],
+      [
+        40.448,
+        43.488
+      ],
+      [
+        43.744,
+        45.44
+      ],
+      [
+        45.696,
+        51.136
+      ],
+      [
+        52.704,
+        54.816
+      ],
+      [
+        55.008,
+        60.96
+      ],
+      [
+        62.368,
+        66.464
+      ],
+      [
+        66.624,
+        67.36
+      ],
+      [
+        67.52,
+        69.056
+      ],
+      [
+        69.216,
+        72.64
+      ],
+      [
+        74.208,
+        80.928
+      ],
+      [
+        82.464,
+        86.528
+      ],
+      [
+        86.72,
+        88.576
+      ],
+      [
+        88.768,
+        91.84
+      ],
+      [
+        93.44,
+        98.24
+      ],
+      [
+        98.464,
+        99.808
+      ],
+      [
+        100.128,
+        103.36
+      ],
+      [
+        104.992,
+        106.08
+      ]
+    ],
+    "phrases": [
+      [
+        0.032,
+        3.296
+      ],
+      [
+        3.744,
+        11.008
+      ],
+      [
+        12.608,
+        15.584
+      ],
+      [
+        16.032,
+        24.864
+      ],
+      [
+        26.432,
+        34.208
+      ],
+      [
+        34.528,
+        36.864
+      ],
+      [
+        38.432,
+        43.488
+      ],
+      [
+        43.744,
+        45.44
+      ],
+      [
+        45.696,
+        51.136
+      ],
+      [
+        52.704,
+        60.96
+      ],
+      [
+        62.368,
+        72.64
+      ],
+      [
+        74.208,
+        80.928
+      ],
+      [
+        82.464,
+        91.84
+      ],
+      [
+        93.44,
+        99.808
+      ],
+      [
+        100.128,
+        103.36
+      ],
+      [
+        104.992,
+        106.08
+      ]
+    ],
+    "vad": {
+      "segments": [
+        [
+          0.032,
+          1.184
+        ],
+        [
+          1.408,
+          3.296
+        ],
+        [
+          3.744,
+          11.008
+        ],
+        [
+          12.608,
+          15.584
+        ],
+        [
+          16.032,
+          21.28
+        ],
+        [
+          21.504,
+          24.864
+        ],
+        [
+          26.432,
+          32.896
+        ],
+        [
+          33.056,
+          34.208
+        ],
+        [
+          34.528,
+          35.232
+        ],
+        [
+          35.424,
+          36.864
+        ],
+        [
+          38.432,
+          40.256
+        ],
+        [
+          40.448,
+          43.488
+        ],
+        [
+          43.744,
+          45.44
+        ],
+        [
+          45.696,
+          51.136
+        ],
+        [
+          52.704,
+          54.816
+        ],
+        [
+          55.008,
+          60.96
+        ],
+        [
+          62.368,
+          66.464
+        ],
+        [
+          66.624,
+          67.36
+        ],
+        [
+          67.52,
+          69.056
+        ],
+        [
+          69.216,
+          72.64
+        ],
+        [
+          74.208,
+          80.928
+        ],
+        [
+          82.464,
+          86.528
+        ],
+        [
+          86.72,
+          88.576
+        ],
+        [
+          88.768,
+          91.84
+        ],
+        [
+          93.44,
+          98.24
+        ],
+        [
+          98.464,
+          99.808
+        ],
+        [
+          100.128,
+          103.36
+        ],
+        [
+          104.992,
+          106.08
+        ]
+      ],
+      "phrases": [
+        [
+          0.032,
+          3.296
+        ],
+        [
+          3.744,
+          11.008
+        ],
+        [
+          12.608,
+          15.584
+        ],
+        [
+          16.032,
+          24.864
+        ],
+        [
+          26.432,
+          34.208
+        ],
+        [
+          34.528,
+          36.864
+        ],
+        [
+          38.432,
+          43.488
+        ],
+        [
+          43.744,
+          45.44
+        ],
+        [
+          45.696,
+          51.136
+        ],
+        [
+          52.704,
+          60.96
+        ],
+        [
+          62.368,
+          72.64
+        ],
+        [
+          74.208,
+          80.928
+        ],
+        [
+          82.464,
+          91.84
+        ],
+        [
+          93.44,
+          99.808
+        ],
+        [
+          100.128,
+          103.36
+        ],
+        [
+          104.992,
+          106.08
+        ]
+      ],
+      "pauses": [
+        [
+          3.296,
+          3.744
+        ],
+        [
+          11.008,
+          12.608
+        ],
+        [
+          15.584,
+          16.032
+        ],
+        [
+          24.864,
+          26.432
+        ],
+        [
+          34.208,
+          34.528
+        ],
+        [
+          36.864,
+          38.432
+        ],
+        [
+          43.488,
+          43.744
+        ],
+        [
+          45.44,
+          45.696
+        ],
+        [
+          51.136,
+          52.704
+        ],
+        [
+          60.96,
+          62.368
+        ],
+        [
+          72.64,
+          74.208
+        ],
+        [
+          80.928,
+          82.464
+        ],
+        [
+          91.84,
+          93.44
+        ],
+        [
+          99.808,
+          100.128
+        ],
+        [
+          103.36,
+          104.992
+        ]
+      ],
+      "valid_speech_seconds": 87.68,
+      "speech_span_seconds": 106.048,
+      "articulation_seconds": 89.952,
+      "pause_ratio": 0.1517803258901629,
+      "pause_median_seconds": 1.5360000000000014,
+      "pause_p90_seconds": 1.5999999999999985,
+      "long_pause_per_min": 0.0,
+      "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+      "model_id": "silero-vad/packaged-onnx"
+    }
+  },
+  "rows": [
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_current",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 90.17568071498039,
+      "range_st": 4.011810827315784,
+      "phrase_sd_st": 1.6890766918529507,
+      "phrase_range_st": 3.9922942472760425,
+      "mad_st": 1.1328816790409917,
+      "coverage_pct": 76.06613454960092,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.2648995499475859,
+      "seconds_per_audio_minute": 0.1471142285460554,
+      "runtime_min_seconds": 0.21962599991820753,
+      "runtime_max_seconds": 0.3101730999769643,
+      "floor": 56.54614808984579,
+      "ceiling": 145.45969853722255,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_hirst",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 90.10027660906903,
+      "range_st": 4.031169035272512,
+      "phrase_sd_st": 1.6844766989783824,
+      "phrase_range_st": 4.006623232395782,
+      "mad_st": 1.1316406801631018,
+      "coverage_pct": 75.44179683046403,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.24283085006754845,
+      "seconds_per_audio_minute": 0.13485818749763337,
+      "runtime_min_seconds": 0.21972450008615851,
+      "runtime_max_seconds": 0.2659372000489384,
+      "floor": 63.61441660107652,
+      "ceiling": 145.45969853722255,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_hirst_cost04",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 90.1152604835858,
+      "range_st": 4.0358737036883525,
+      "phrase_sd_st": 1.6913967036400588,
+      "phrase_range_st": 4.013441848335994,
+      "mad_st": 1.1348188566696962,
+      "coverage_pct": 74.94014365522746,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.21491775003960356,
+      "seconds_per_audio_minute": 0.11935640888852474,
+      "runtime_min_seconds": 0.21083650004584342,
+      "runtime_max_seconds": 0.2189990000333637,
+      "floor": 63.65608444483889,
+      "ceiling": 145.5422511282573,
+      "octave_cost": 0.04,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_post",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 90.17568071498039,
+      "range_st": 4.011810827315784,
+      "phrase_sd_st": 1.6890766918529507,
+      "phrase_range_st": 3.9922942472760425,
+      "mad_st": 1.1328816790409917,
+      "coverage_pct": 76.06613454960092,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.42915400001220405,
+      "seconds_per_audio_minute": 0.23833434089163733,
+      "runtime_min_seconds": 0.4176438000285998,
+      "runtime_max_seconds": 0.4406641999958083,
+      "floor": 56.54614808984579,
+      "ceiling": 145.45969853722255,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "pyin",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 90.64713534281104,
+      "range_st": 3.9000000000000057,
+      "phrase_sd_st": 1.6598098288373166,
+      "phrase_range_st": 3.9000000000000057,
+      "mad_st": 1.1999999999999886,
+      "coverage_pct": 80.7850296668188,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 25.114156900031958,
+      "seconds_per_audio_minute": 13.947361626940603,
+      "runtime_min_seconds": 25.0030786000425,
+      "runtime_max_seconds": 25.225235200021416,
+      "mean_probability": 0.08188844711078536
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "torchcrepe_tiny",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 89.67815017700195,
+      "range_st": 3.8214788698471125,
+      "phrase_sd_st": 1.6752891934235794,
+      "phrase_range_st": 3.8063501306546783,
+      "mad_st": 1.1726476122023115,
+      "coverage_pct": 79.16476494751255,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 30.84648945002118,
+      "seconds_per_audio_minute": 17.13086148954123,
+      "runtime_min_seconds": 30.710821900051087,
+      "runtime_max_seconds": 30.982156999991275,
+      "periodicity_threshold": 0.21
+    },
+    {
+      "file_id": "real_03",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "swift_f0",
+      "duration_seconds": 108.0383125,
+      "status": "ok",
+      "f0_median_hz": 89.97695683898137,
+      "range_st": 4.011985595389419,
+      "phrase_sd_st": 1.6679323820700214,
+      "phrase_range_st": 3.8725613923795237,
+      "mad_st": 1.1132224635328072,
+      "coverage_pct": 75.89416058394161,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.5303199000190943,
+      "seconds_per_audio_minute": 0.29451768789100313,
+      "runtime_min_seconds": 0.5290367000270635,
+      "runtime_max_seconds": 0.5316031000111252,
+      "confidence_threshold": 0.5
+    }
+  ],
+  "trackers": [
+    "praat_current",
+    "praat_hirst",
+    "praat_hirst_cost04",
+    "praat_post",
+    "pyin",
+    "torchcrepe_tiny",
+    "swift_f0"
+  ],
+  "protocol_hash": "cb376eabddd1077fe8ce2e5176526c291bd9dae816caaa1083366d226063e7ad",
+  "config_fingerprint": "bbd7c1d10a155ff05aa08c07ce23a6fdbab598a4411b035435deaa79d673c8d7",
+  "repeats": 2,
+  "source_sha256": "483a274dce9c877615d1a87454f6c644cdd9490ff1a340edbc27f2bf9cb24161"
+}

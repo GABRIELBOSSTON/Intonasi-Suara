@@ -1,0 +1,6 @@
+# Install into the existing voice-analysis/.venv; preserve its base lock.
+librosa==0.11.0
+scipy==1.15.3
+matplotlib==3.10.8
+torchcrepe==0.0.24
+swift-f0==0.3.0

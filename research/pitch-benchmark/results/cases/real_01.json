@@ -1,0 +1,253 @@
+{
+  "case": {
+    "id": "real_01",
+    "kind": "real",
+    "variant": "original",
+    "path": "D:\\gasgawe\\prototipe\\notasi\\sampel\\1test.mp4",
+    "source_sha256": "db30fcc2b1219f4d0c2e738db9e2064642d99a7071a3282cb50613697445c230",
+    "audio_info": {
+      "original_channels": 2,
+      "original_sample_rate": 44100,
+      "original_channel_layout": "stereo",
+      "original_codec": "aac",
+      "duration_seconds": 9.961,
+      "analysis_sample_rate": 16000,
+      "ffmpeg_version": "ffmpeg version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "clipping_pct": 0.15525405208523038,
+      "clipping_pct_per_channel": [
+        0.15525405208523038,
+        0.11860316882170825
+      ],
+      "rms_per_channel": [
+        0.36111740633039885,
+        0.3606166192937868
+      ],
+      "ac_rms_per_channel": [
+        0.36111684389408677,
+        0.36061599960460045
+      ],
+      "dc_offset_per_channel": [
+        -0.0006373466473165774,
+        -0.0006685357442384418
+      ],
+      "peak_per_channel": [
+        1.2934736013412476,
+        1.2211278676986694
+      ],
+      "stereo_correlation": 0.9828905613289406,
+      "selected_channel": null,
+      "channel_strategy": "mean",
+      "warnings": []
+    },
+    "segments": [
+      [
+        1.536,
+        1.696
+      ]
+    ],
+    "phrases": [
+      [
+        1.536,
+        1.696
+      ]
+    ],
+    "vad": {
+      "segments": [
+        [
+          1.536,
+          1.696
+        ]
+      ],
+      "phrases": [
+        [
+          1.536,
+          1.696
+        ]
+      ],
+      "pauses": [],
+      "valid_speech_seconds": 0.15999999999999992,
+      "speech_span_seconds": 0.15999999999999992,
+      "articulation_seconds": 0.15999999999999992,
+      "pause_ratio": 0.0,
+      "pause_median_seconds": null,
+      "pause_p90_seconds": null,
+      "long_pause_per_min": 0.0,
+      "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+      "model_id": "silero-vad/packaged-onnx"
+    }
+  },
+  "rows": [
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_current",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 206.35359056073526,
+      "range_st": 0.12943109592941937,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.04962033201783811,
+      "coverage_pct": 93.75,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.019090749963652343,
+      "seconds_per_audio_minute": 0.11499297237417333,
+      "runtime_min_seconds": 0.017482099938206375,
+      "runtime_max_seconds": 0.02069939998909831,
+      "floor": 50.0,
+      "ceiling": 600.0,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_hirst",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 206.35359056073526,
+      "range_st": 0.12943109592941937,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.04962033201783811,
+      "coverage_pct": 93.75,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.01630714995553717,
+      "seconds_per_audio_minute": 0.09822598105935451,
+      "runtime_min_seconds": 0.015696899965405464,
+      "runtime_max_seconds": 0.016917399945668876,
+      "floor": 50.0,
+      "ceiling": 600.0,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_hirst_cost04",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 206.50267279196214,
+      "range_st": 0.13164778424697943,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.053074972767547024,
+      "coverage_pct": 87.5,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.01811325002927333,
+      "seconds_per_audio_minute": 0.10910500971352273,
+      "runtime_min_seconds": 0.018087000004015863,
+      "runtime_max_seconds": 0.0181395000545308,
+      "floor": 50.0,
+      "ceiling": 600.0,
+      "octave_cost": 0.04,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "praat_post",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 206.35359056073526,
+      "range_st": 0.12943109592941937,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.04962033201783811,
+      "coverage_pct": 93.75,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.01714594993973151,
+      "seconds_per_audio_minute": 0.10327848573274676,
+      "runtime_min_seconds": 0.017033199896104634,
+      "runtime_max_seconds": 0.017258699983358383,
+      "floor": 50.0,
+      "ceiling": 600.0,
+      "octave_cost": 0.01,
+      "rejected_pct": 0.0
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "pyin",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 207.05298476827548,
+      "range_st": 0.09999999999999432,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.0,
+      "coverage_pct": 68.75,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 2.4421840499853715,
+      "seconds_per_audio_minute": 14.710475153008964,
+      "runtime_min_seconds": 2.420389399980195,
+      "runtime_max_seconds": 2.463978699990548,
+      "mean_probability": 0.06116165977367594
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "torchcrepe_tiny",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 204.76254272460938,
+      "range_st": 0.23178672784503362,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.06323149039422304,
+      "coverage_pct": 87.5,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 2.8246529499883763,
+      "seconds_per_audio_minute": 17.014273366057886,
+      "runtime_min_seconds": 2.814757899963297,
+      "runtime_max_seconds": 2.8345480000134557,
+      "periodicity_threshold": 0.21
+    },
+    {
+      "file_id": "real_01",
+      "kind": "real",
+      "variant": "original",
+      "tracker": "swift_f0",
+      "duration_seconds": 9.961,
+      "status": "ok",
+      "f0_median_hz": 206.22501499989676,
+      "range_st": 0.2008309748701862,
+      "phrase_sd_st": null,
+      "phrase_range_st": null,
+      "mad_st": 0.06724593756842978,
+      "coverage_pct": 100.0,
+      "octave_jump_count": 0,
+      "octave_jump_per_min": 0.0,
+      "runtime_seconds": 0.045099099981598556,
+      "seconds_per_audio_minute": 0.27165405068727166,
+      "runtime_min_seconds": 0.04365410003811121,
+      "runtime_max_seconds": 0.0465440999250859,
+      "confidence_threshold": 0.5
+    }
+  ],
+  "trackers": [
+    "praat_current",
+    "praat_hirst",
+    "praat_hirst_cost04",
+    "praat_post",
+    "pyin",
+    "torchcrepe_tiny",
+    "swift_f0"
+  ],
+  "protocol_hash": "cb376eabddd1077fe8ce2e5176526c291bd9dae816caaa1083366d226063e7ad",
+  "config_fingerprint": "bbd7c1d10a155ff05aa08c07ce23a6fdbab598a4411b035435deaa79d673c8d7",
+  "repeats": 2,
+  "source_sha256": "db30fcc2b1219f4d0c2e738db9e2064642d99a7071a3282cb50613697445c230"
+}

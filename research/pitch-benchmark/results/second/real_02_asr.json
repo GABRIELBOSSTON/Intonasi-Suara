@@ -1,0 +1,440 @@
+{
+  "file_id": "real_02",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": " Assalamualaikum warahmatullahi wabarakatuh, perkenalkan nama saya Nadine Hamzah",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.94,
+          "word": " Assalamualaikum",
+          "probability": 0.9260173678398133
+        },
+        {
+          "start": 0.94,
+          "end": 1.58,
+          "word": " warahmatullahi",
+          "probability": 0.948237943649292
+        },
+        {
+          "start": 1.58,
+          "end": 2.2,
+          "word": " wabarakatuh,",
+          "probability": 0.9293611526489258
+        },
+        {
+          "start": 2.28,
+          "end": 2.82,
+          "word": " perkenalkan",
+          "probability": 0.8587203621864319
+        },
+        {
+          "start": 2.82,
+          "end": 2.98,
+          "word": " nama",
+          "probability": 0.848304271697998
+        },
+        {
+          "start": 2.98,
+          "end": 3.22,
+          "word": " saya",
+          "probability": 0.991270899772644
+        },
+        {
+          "start": 3.22,
+          "end": 3.5,
+          "word": " Nadine",
+          "probability": 0.7138606607913971
+        },
+        {
+          "start": 3.5,
+          "end": 4.0,
+          "word": " Hamzah",
+          "probability": 0.6304717262585958
+        }
+      ]
+    },
+    {
+      "start": 4.0,
+      "end": 10.02,
+      "text": " Besiah saya 18 tahun dengan tinggi badan 158 cm dan berat badan 45 kg",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 4.0,
+          "end": 4.56,
+          "word": " Besiah",
+          "probability": 0.46471219261487323
+        },
+        {
+          "start": 4.56,
+          "end": 4.72,
+          "word": " saya",
+          "probability": 0.9787455797195435
+        },
+        {
+          "start": 4.72,
+          "end": 5.0,
+          "word": " 18",
+          "probability": 0.45569032430648804
+        },
+        {
+          "start": 5.0,
+          "end": 5.56,
+          "word": " tahun",
+          "probability": 0.9693553447723389
+        },
+        {
+          "start": 5.56,
+          "end": 5.8,
+          "word": " dengan",
+          "probability": 0.9714171886444092
+        },
+        {
+          "start": 5.8,
+          "end": 6.1,
+          "word": " tinggi",
+          "probability": 0.5987286493182182
+        },
+        {
+          "start": 6.1,
+          "end": 6.38,
+          "word": " badan",
+          "probability": 0.9798818230628967
+        },
+        {
+          "start": 6.38,
+          "end": 7.34,
+          "word": " 158",
+          "probability": 0.9926660358905792
+        },
+        {
+          "start": 7.34,
+          "end": 7.76,
+          "word": " cm",
+          "probability": 0.8227059245109558
+        },
+        {
+          "start": 7.76,
+          "end": 8.5,
+          "word": " dan",
+          "probability": 0.9370748400688171
+        },
+        {
+          "start": 8.5,
+          "end": 8.76,
+          "word": " berat",
+          "probability": 0.9917289316654205
+        },
+        {
+          "start": 8.76,
+          "end": 9.0,
+          "word": " badan",
+          "probability": 0.9731882214546204
+        },
+        {
+          "start": 9.0,
+          "end": 9.38,
+          "word": " 45",
+          "probability": 0.9955547451972961
+        },
+        {
+          "start": 9.38,
+          "end": 10.02,
+          "word": " kg",
+          "probability": 0.7223114371299744
+        }
+      ]
+    },
+    {
+      "start": 10.02,
+      "end": 14.42,
+      "text": " Alasan saya ingin bergabung menjadi beauty promotor, yaitu panas saya sangat tertarik",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 10.02,
+          "end": 11.08,
+          "word": " Alasan",
+          "probability": 0.8527843356132507
+        },
+        {
+          "start": 11.08,
+          "end": 11.3,
+          "word": " saya",
+          "probability": 0.9955507516860962
+        },
+        {
+          "start": 11.3,
+          "end": 11.5,
+          "word": " ingin",
+          "probability": 0.889797180891037
+        },
+        {
+          "start": 11.5,
+          "end": 11.84,
+          "word": " bergabung",
+          "probability": 0.9900824576616287
+        },
+        {
+          "start": 11.84,
+          "end": 12.12,
+          "word": " menjadi",
+          "probability": 0.9866176247596741
+        },
+        {
+          "start": 12.12,
+          "end": 12.4,
+          "word": " beauty",
+          "probability": 0.8252694606781006
+        },
+        {
+          "start": 12.4,
+          "end": 12.94,
+          "word": " promotor,",
+          "probability": 0.7244828790426254
+        },
+        {
+          "start": 13.0,
+          "end": 13.26,
+          "word": " yaitu",
+          "probability": 0.9588209390640259
+        },
+        {
+          "start": 13.26,
+          "end": 13.54,
+          "word": " panas",
+          "probability": 0.8604060709476471
+        },
+        {
+          "start": 13.54,
+          "end": 13.68,
+          "word": " saya",
+          "probability": 0.8388016819953918
+        },
+        {
+          "start": 13.68,
+          "end": 13.86,
+          "word": " sangat",
+          "probability": 0.8425176739692688
+        },
+        {
+          "start": 13.86,
+          "end": 14.42,
+          "word": " tertarik",
+          "probability": 0.9932574431101481
+        }
+      ]
+    },
+    {
+      "start": 14.42,
+      "end": 16.9,
+      "text": " dan ingin menggumbangkan pesan saya di bidang kecantikan",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 14.42,
+          "end": 14.58,
+          "word": " dan",
+          "probability": 0.8887078762054443
+        },
+        {
+          "start": 14.58,
+          "end": 14.92,
+          "word": " ingin",
+          "probability": 0.9529837369918823
+        },
+        {
+          "start": 14.92,
+          "end": 15.36,
+          "word": " menggumbangkan",
+          "probability": 0.6090966463088989
+        },
+        {
+          "start": 15.36,
+          "end": 15.64,
+          "word": " pesan",
+          "probability": 0.41861791908741
+        },
+        {
+          "start": 15.64,
+          "end": 15.86,
+          "word": " saya",
+          "probability": 0.9812306761741638
+        },
+        {
+          "start": 15.86,
+          "end": 16.06,
+          "word": " di",
+          "probability": 0.9399096369743347
+        },
+        {
+          "start": 16.06,
+          "end": 16.34,
+          "word": " bidang",
+          "probability": 0.9568149149417877
+        },
+        {
+          "start": 16.34,
+          "end": 16.9,
+          "word": " kecantikan",
+          "probability": 0.8960088491439819
+        }
+      ]
+    },
+    {
+      "start": 17.639999999999997,
+      "end": 22.26,
+      "text": " Dan besar harapan bagi saya untuk bisa bergabung bersama PT Paragon Technologi & Innovation",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 17.639999999999997,
+          "end": 18.2,
+          "word": " Dan",
+          "probability": 0.590033769607544
+        },
+        {
+          "start": 18.2,
+          "end": 18.42,
+          "word": " besar",
+          "probability": 0.48638617992401123
+        },
+        {
+          "start": 18.42,
+          "end": 18.74,
+          "word": " harapan",
+          "probability": 0.9880373477935791
+        },
+        {
+          "start": 18.74,
+          "end": 18.98,
+          "word": " bagi",
+          "probability": 0.9928493499755859
+        },
+        {
+          "start": 18.98,
+          "end": 19.14,
+          "word": " saya",
+          "probability": 0.9981843829154968
+        },
+        {
+          "start": 19.14,
+          "end": 19.36,
+          "word": " untuk",
+          "probability": 0.9854192733764648
+        },
+        {
+          "start": 19.36,
+          "end": 19.66,
+          "word": " bisa",
+          "probability": 0.9875409007072449
+        },
+        {
+          "start": 19.66,
+          "end": 20.14,
+          "word": " bergabung",
+          "probability": 0.9990926831960678
+        },
+        {
+          "start": 20.14,
+          "end": 20.44,
+          "word": " bersama",
+          "probability": 0.8488342463970184
+        },
+        {
+          "start": 20.44,
+          "end": 20.68,
+          "word": " PT",
+          "probability": 0.9521978497505188
+        },
+        {
+          "start": 20.68,
+          "end": 21.12,
+          "word": " Paragon",
+          "probability": 0.7678789794445038
+        },
+        {
+          "start": 21.12,
+          "end": 21.78,
+          "word": " Technologi",
+          "probability": 0.6752749880154928
+        },
+        {
+          "start": 21.78,
+          "end": 21.88,
+          "word": " &",
+          "probability": 0.605299711227417
+        },
+        {
+          "start": 21.88,
+          "end": 22.26,
+          "word": " Innovation",
+          "probability": 0.9148922562599182
+        }
+      ]
+    },
+    {
+      "start": 22.26,
+      "end": 25.4,
+      "text": " Sekian terima kasih warahmatullahi wabarakatuh",
+      "no_speech_prob": 0.06073971837759018,
+      "avg_logprob": -0.24339203106265672,
+      "words": [
+        {
+          "start": 22.26,
+          "end": 22.76,
+          "word": " Sekian",
+          "probability": 0.5984013676643372
+        },
+        {
+          "start": 22.76,
+          "end": 22.98,
+          "word": " terima",
+          "probability": 0.9000146090984344
+        },
+        {
+          "start": 22.98,
+          "end": 23.26,
+          "word": " kasih",
+          "probability": 0.9969792366027832
+        },
+        {
+          "start": 23.26,
+          "end": 24.72,
+          "word": " warahmatullahi",
+          "probability": 0.8338146090507508
+        },
+        {
+          "start": 24.72,
+          "end": 25.4,
+          "word": " wabarakatuh",
+          "probability": 0.9958967208862305
+        }
+      ]
+    }
+  ],
+  "model": {
+    "repo": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "source": "huggingface_snapshot",
+    "file_sha256": {
+      "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+      "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+      "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+      "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    },
+    "device": "cpu",
+    "compute_type": "int8"
+  },
+  "runtime_seconds": 6.438459400087595,
+  "note": "Full audio; no VAD cropping. ASR boundaries are approximate, not phonetic ground truth."
+}

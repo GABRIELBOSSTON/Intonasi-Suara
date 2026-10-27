@@ -1,0 +1,58 @@
+﻿[
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\config.py",
+        "sha256":  "392C3F670FB55FE463CEE293B6BEA19297DBAFE3196146AFACBA6418A70B8647"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\output.py",
+        "sha256":  "7C31D8C6C45036062A3847BB5C5D92CDB84EFA6EA8BD25B12A4497EBAA9D1272"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\__init__.py",
+        "sha256":  "063D8253414ABF57DF9AAC910F0460B6F9E57DBFD9BB895B0BA7897B0EC9E0C5"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\common.py",
+        "sha256":  "FDEB8F95B6F07D2357225399A27F02B27EBD621A9749BFAE19930A3484A15A3D"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\extract.py",
+        "sha256":  "88C5E684D44BE7D784A94FDEA31B61002979B46933B3C7BCDE6249EA9CC339ED"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\pitch.py",
+        "sha256":  "5B3BB42B80932811C247043DA980B0B947F284E108747A2647B50AE80BC00199"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\quality.py",
+        "sha256":  "021A32A291FCFDD767E56BEFC95798CED56C69D895317103F753289F6BBB76AF"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\run.py",
+        "sha256":  "9D6A91798DE80437B46837B111069D9029531FFFF04BB452F0BE784189537D93"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\scoring.py",
+        "sha256":  "34BCECB07AD092277CDE5518988EC1A88937D0A7D425300D571D8D2A001E28A0"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\syllable.py",
+        "sha256":  "68EF5D5B30A47956B2CC482B5BA314D43DA8D2FC3028CC943F542FA66DA7126E"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\tempo.py",
+        "sha256":  "869480917415C5F31B70303EE4F8A143AE553602C421B00801A12F6C7DFD8D5C"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\transcribe.py",
+        "sha256":  "58B19C1AE35BA1F7AF3247B402D622F3C67CA8ABE48A57FA9B85B07FA0C87F56"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\vad.py",
+        "sha256":  "4563EEAB0E2E891329A7B2E95E27FED48F178F0C3710E71F058ADA88C7E546C2"
+    },
+    {
+        "path":  "D:\\gasgawe\\prototipe\\notasi\\voice-analysis\\app\\pipeline\\__init__.py",
+        "sha256":  "09816379B1DFC73C145C8265121E0BC1EC6B93AB542B74F78C483460D942A6AB"
+    }
+]

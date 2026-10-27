@@ -1,0 +1,12 @@
+.venv/
+.runtime/
+.cache/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.wav
+*.mp4
+*.csv
+*.log
+config.local.json
+
